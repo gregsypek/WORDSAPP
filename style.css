@@ -54,6 +54,10 @@ h1 {
 p {
   margin-bottom: 20px;
 }
+p.error {
+  color: red;
+}
+
 
 /* REGISTER FORM */
 .register-block {
@@ -119,6 +123,9 @@ p {
 .register-block form input[type="submit"]:hover {
   background-size: 140% 140%;
 }
+/* .register-block form>p.error {
+  color: red;
+} */
 
 .register-title {
   display: flex;
@@ -275,4 +282,11 @@ footer {
       bottom: -3px;
     } */
 
+
+    /* FORM */
+
+    .register-block .error {
+      color: red;
+      margin-bottom: 1rem;
+    }
 

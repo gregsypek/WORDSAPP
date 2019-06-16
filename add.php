@@ -1,4 +1,6 @@
 <?php
+$explanation = $definition = '';
+$errors = array('definition'=>'', 'explanation'=>'');
 
 if(isset($_POST['submit'])){
   // echo htmlspecialchars($_POST['definition']);
@@ -6,22 +8,30 @@ if(isset($_POST['submit'])){
 
   //check definition
   if(empty($_POST['definition'])){
-    echo "Definition is required <br />";
+    $errors['definition'] = "Definition is required <br />";
   } else {
     $definition = $_POST['definition'];
     if(!preg_match('/^[a-zA-Z\s]+$/' ,$definition)) {
-    echo 'Definition must contains letters and spaces only';
+    $errors['definition'] = 'Definition must contains letters and spaces only';
     }
   }
   //check explanation
   if(empty($_POST['explanation'])){
-    echo "Definition is required <br />";
+    $errors['explanation'] = "Explanation is required <br />";
   } else {
     $explanation = $_POST['explanation'];
-    if(!preg_match('/^([a-zA-Z\s]+)(,)(\s*[a-zA-Z\s]*)*$/' ,$explanation)){
-    echo 'Explanation must contains a comma separated lists';
+    if(!preg_match('/^([a-zA-Z\s]+)(,\s*[a-zA-Z\s]*)*$/' ,$explanation)){
+    $errors['explanation'] = 'Explanation must contains a comma separated lists';
     }
   }
+
+  if(array_filter($errors)){
+    //echo 'errors in the form'
+  }else {
+    //echo'form is valid';
+    header('Location: index.php');
+  }
+
 } //end of POST check
 
 ?>
@@ -35,8 +45,12 @@ if(isset($_POST['submit'])){
                   <h3 class="register-title">Add some new words</h3>
                   <p>Quickly click on submit button to add a new word to the form below.</p>
                   <form action="add.php" method="post">
-                    <input type="text" placeholder="Enter your word" name="definition"/>
-                    <input type="text" placeholder="Enter your explanation" name="explanation" />
+                    <label for="definition">Enter your word</label>
+                    <input type="text" name="definition" value="<?php echo htmlspecialchars($definition) ?>">
+                    <p class="error definition"><?php echo $errors['definition'];?></p>
+                    <label for="explanation">Enter your explanation</label>
+                    <input type="text" name="explanation" value="<?php echo htmlspecialchars($explanation)?>">
+                    <p class="error explanation"><?php echo $errors['explanation'];?></p>
                     <input type="submit" value="Add to the database" name="submit"/>
                   </form>
                 </div>
