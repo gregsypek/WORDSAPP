@@ -1,5 +1,7 @@
 
 /* font-family: 'Bubblegum Sans', cursive; */
+/*  dark blue - #021b79  rgba(2, 27, 121, 1)*/
+/* light blue - hsl (227° 51% 56%) */
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +15,7 @@ body {
     background: #021b79;
     /* background: #5770c8; */
     background-image: linear-gradient(135deg,,#5770c8 60%, #021b79 80%); 
+    color: white;
 }
 
 
@@ -20,16 +23,17 @@ nav {
     background:  #021b79;
     padding: 1rem;
     border-bottom: 2px solid #0575e6;
+    max-height: 15vh;
 }
 h1 {
       width: 100%;
       max-width: 960px;
-      margin: 40px auto;
+      margin: 1rem auto;
       transform: rotate(-1deg);
       color: white;
       text-align: center;
       font-size: 3rem;
-      line-height: 5rem;
+      line-height: 4rem;
       text-shadow:  0 1px 0 hsl(52,7%,20%),
                     0 2px 0 hsl(52,7%,18%),
                     0 3px 0 hsl(52,7%,16%),
@@ -122,9 +126,152 @@ p {
   padding-bottom: 20px;
   width: 100%;
   margin: 20px auto;
-  border-bottom: dashed 1px #021b79;
+  border-bottom: dashed 2px #021b79;
   justify-content: center;
 
 
 }
+/* INSTRUCTION */
+
+.instruction {
+  /* display: block;
+  margin: 0 5rem;
+  
+  line-height: 1.5rem;
+  */ 
+
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* max-height: 60vh; */
+  /* padding: 15px;  */
+
+
+  position: relative;
+  background:#5770c8;
+  /* background:  #2d2e30; */
+  /* background:  #021b79; */
+  width: 60%;
+  /* max-width: 960px; */
+  margin: 60px auto;
+  padding: 40px 40px 60px;
+ 
+  box-shadow: 0 0 50px rgba(0, 0,0,.2);
+  border-radius: 2px;
+  color: white;
+
+
+
+ /* margin: 60px auto; */
+
+}
+
+/* .instruction h2, */
+.instruction ol,
+.btn-3d {
+  /* margin: 3rem 0; */
+  align-self: center;
+  font-size: 1.3rem;
+
+}
+.instruction h2 {
+  font-size: 1.8rem;
+  /* padding: 4rem; */
+  margin: 20px auto;
+  padding-bottom: 20px;
+  align-self: center;
+  border-bottom: dashed 2px #021b79;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: serif;
+  color: #5770c8;
+  font-size: 1rem;
+}
+
+/* BUTTON 3D */
+
+.btn-3d {
+  /* position: relative; */
+  display: block;
+  width: 6rem;
+  background:  #5770c8;
+  border: none;
+  color: white;
+  padding: 15px 24px;
+  font-size: 1.4rem;
+  box-shadow: -6px 6px 0 hsl(221, 51%, 30%);
+  outline: none;
+  margin-top: 3rem;
+  /* margin: 3rem 8rem; */
+}
+
+  .btn-3d:hover {
+    background: hsl(227, 51%, 45%);
+  }
+
+  .btn-3d:active {
+    background: hsl(227, 51%, 40%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(227, 51%, 30%);
+  }
+
+  /* .btn-3d::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    /* border width needs to be size of the element's box shadow */
+    /* border: solid 6px transparent; */
+
+    /* border width needs to be size of the element's box shadow */
+    /* border-right: solid 6px hsl(227, 51%, 30%); */
+
+    /* no width for left, makes measurements easier */
+    /* border-left-width: 0px; */
+/* 
+    background: none;
+    top: 0px; */
+
+    /* needs to be the same size as border width */
+    /* left: -6px; */
+  } */
+
+  /* .btn-3d::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 6px transparent;
+    border-top: solid 6px hsl(227, 51%, 30%);
+    border-bottom-width: 0px;
+    background: none;
+    right: 0;
+    bottom: -6px;
+  } */
+
+    /* .btn-3d:active::before {
+      border: solid 3px transparent;
+      border-right: solid 3px hsl(227, 51%, 30%);
+      border-left-width: 0px;
+      left: -3px;
+    }
+
+    .btn-3d:active::after {
+      border: solid 3px transparent;
+      border-top: solid 3px hsl(227, 51%, 30%);
+      border-bottom-width: 0px;
+      bottom: -3px;
+    } */
+
 
