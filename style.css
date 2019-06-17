@@ -1,7 +1,7 @@
 
 /* font-family: 'Bubblegum Sans', cursive; */
 /*  dark blue - #021b79  rgba(2, 27, 121, 1)*/
-/* light blue - hsl (227° 51% 56%) */
+/* light blue -  #5770c8; hsl (227° 51% 56%) */
 * {
     padding: 0;
     margin: 0;
@@ -290,3 +290,41 @@ footer {
       margin-bottom: 1rem;
     }
 
+    /* WORDS */
+
+  .container{
+      display: grid;
+     justify-content: center;
+      padding: 2rem;
+      grid-gap: 2rem;
+      grid-template-rows: 1fr,repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+      background-color:   #5770c8;
+      padding: 2rem;
+      display: grid;
+      justify-content: center;
+      box-shadow: 0 0 50px rgba(0, 0,0,.3);
+    }
+    .card-content {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-content h5 {
+      font-size:1.3rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .card-action {
+      padding-top: 1rem;
+      border-top: 2px dashed #021b79;
+      justify-self: center;
+    }
+.words {
+  grid-column: 1/-1;
+  font-size: 2rem;
+  margin: 0 auto;
+
+}
