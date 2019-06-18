@@ -20,11 +20,30 @@ body {
 
 
 nav {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    justify-content: center;
+    align-content: center;
     background:  #021b79;
     padding: 1rem;
     border-bottom: 2px solid #0575e6;
-    max-height: 15vh;
+    height: 15vh;
 }
+a,
+a:active,
+a:link {
+ 
+  color: white;
+  font-size: 2rem;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.logo:hover,
+.add:hover {
+  color:  #0575e6;
+}
+
 h1 {
       width: 100%;
       max-width: 960px;

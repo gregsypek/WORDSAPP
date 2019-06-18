@@ -24,6 +24,7 @@ mysqli_free_result($result);
 mysqli_close($conn);
 
 // print_r($words);
+// print_r(explode(',', $words[0]['explanation']));
 
 ?>
 
@@ -35,12 +36,16 @@ mysqli_close($conn);
 
 <div class="container">
 <h3 class="words">Words!</h3>
-    <?php foreach($words as $word){ ?>
+    <?php foreach($words as $word): ?>
 
     <div class="card">
         <div class="card-content">
             <h5> <?php  echo htmlspecialchars($word['definition']); ?></h5>
-            <div> <?php echo htmlspecialchars($word['explanation']); ?></div>
+            <ul>
+                <?php foreach(explode(',', $word['explanation']) as $exp):?>
+                    <li><?php echo htmlspecialchars($exp);?></li>
+                <?php endforeach;?>
+            </ul>
         </div>
     
         <div class="card-action">
@@ -48,7 +53,7 @@ mysqli_close($conn);
         </div>
     </div>
 
-    <?php } ?>
+                <?php endforeach; ?>
 
 </div>
 
