@@ -1,11 +1,5 @@
 <?php 
-// connect to database
-$conn = mysqli_connect('localhost','root', '', 'wordsapp');
-
-//check connection
-if(!$conn) {
-        echo 'Connection error: '.mysqli_connect_error();
-}
+    include('config/db_connect.php');
 
 // write query for words
 $sql = 'SELECT definition, explanation, id FROM words ORDER BY created_at';
@@ -49,7 +43,7 @@ mysqli_close($conn);
         </div>
     
         <div class="card-action">
-            <a href="#" class="diki-info">more info</a>
+            <a href="details.php?id=<?php echo $word['id'];?>" class="diki-info">more info</a>
         </div>
     </div>
 

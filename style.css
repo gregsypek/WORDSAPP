@@ -12,9 +12,9 @@ body {
   width: 100vw;
   height: 100vh;
     font-family: 'Bubblegum Sans', cursive;
-    background: #021b79;
+    background: #2c47a8;
     /* background: #5770c8; */
-    background-image: linear-gradient(135deg,,#5770c8 60%, #021b79 80%); 
+    
     color: white;
 }
 
@@ -24,19 +24,20 @@ nav {
     grid-template-columns: 1fr 6fr 1fr;
     justify-content: center;
     align-content: center;
-    background:  #021b79;
+    /* background:  #032290;
+     */
+     background-image: linear-gradient(135deg,#222649 20%, #09268b 80%); 
     padding: 1rem;
-    border-bottom: 2px solid #0575e6;
+    border-bottom: 2px solid#021b79;
     height: 15vh;
 }
-a,
-a:active,
-a:link {
- 
+.logo,
+.add{
   color: white;
   font-size: 2rem;
   padding: 16px;
   text-decoration: none;
+  transition: color .2s ease-in-out;
 }
 
 .logo:hover,
@@ -316,8 +317,8 @@ footer {
      justify-content: center;
       padding: 2rem;
       grid-gap: 2rem;
-      grid-template-rows: 1fr,repeat(auto-fit, minmax(200px, 1fr));
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-rows: 1fr,repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
     .card {
@@ -328,18 +329,23 @@ footer {
       box-shadow: 0 0 50px rgba(0, 0,0,.3);
     }
     .card-content {
-      padding: 1rem;
-      text-align: center;
+      width: 300px;
+      padding: 1.2rem;
+      text-align: left;
+      border-bottom: 2px dashed #021b79;
     }
     .card-content h5 {
       font-size:1.3rem;
       text-transform: uppercase;
       margin-bottom: 1rem;
+      text-align: center;
     }
     .card-action {
       padding-top: 1rem;
-      border-top: 2px dashed #021b79;
-      justify-self: center;
+     
+      justify-self: right;
+      font-size: 1.3rem;
+
     }
 .words {
   grid-column: 1/-1;

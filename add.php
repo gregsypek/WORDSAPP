@@ -1,4 +1,7 @@
 <?php
+
+include('config/db_connect.php');
+
 $explanation = $definition = '';
 $errors = array('definition'=>'', 'explanation'=>'');
 
@@ -28,8 +31,22 @@ if(isset($_POST['submit'])){
   if(array_filter($errors)){
     //echo 'errors in the form'
   }else {
-    //echo'form is valid';
-    header('Location: index.php');
+
+    $definition = mysqli_real_escape_string($conn, $_POST['definition']);
+    $explanation = mysqli_real_escape_string($conn, $_POST['explanation']);
+
+    //create sql
+    $sql = "INSERT INTO words(definition, explanation) VALUES('$definition', '$explanation')";
+
+    //save to db and check
+    if(mysqli_query($conn, $sql)) {
+      //success
+      header('Location: words.php');
+    } else {
+      //error
+      echo 'query error: '.mysqli_error($conn);
+    }
+ 
   }
 
 } //end of POST check
