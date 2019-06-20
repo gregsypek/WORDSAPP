@@ -43,7 +43,7 @@ mysqli_close($conn);
         </div>
     
         <div class="card-action">
-            <a href="details.php?id=<?php echo $word['id'];?>" class="diki-info">more info</a>
+            <a href="details.php?id=<?php echo $word['id']?>" class="diki-info">more info</a>
         </div>
     </div>
 

@@ -14,7 +14,7 @@
                                 <li>Klikamy na DODAJ</li>
                                 <li>Aby podejrzec nowo dodane słowo przechodzimy do biblioteki</li>
                 </ol>
-                <a href="add.php" class="btn-3d">GO!</a>
+                <a href="words.php" class="btn-3d">GO!</a>
                
             
         </header>

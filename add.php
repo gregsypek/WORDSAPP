@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 
 <div class="register-block">
                   <h3 class="register-title">Add some new words</h3>
-                  <p>Quickly click on submit button to add a new word to the form below.</p>
+                  <p class="register-instruction">Quickly click on submit button to add a new word to the form below.</p>
                   <form action="add.php" method="post">
                     <label for="definition">Enter your word</label>
                     <input type="text" name="definition" value="<?php echo htmlspecialchars($definition) ?>">

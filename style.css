@@ -12,8 +12,12 @@ body {
   width: 100vw;
   height: 100vh;
     font-family: 'Bubblegum Sans', cursive;
-    background: #2c47a8;
+    /* background: #2c47a8; */
     /* background: #5770c8; */
+    background-image: url('london.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     
     color: white;
 }
@@ -24,16 +28,20 @@ nav {
     grid-template-columns: 1fr 6fr 1fr;
     justify-content: center;
     align-content: center;
-    /* background:  #032290;
-     */
-     background-image: linear-gradient(135deg,#222649 20%, #09268b 80%); 
+    /* background:  #032290; */
+    /* background: hsl(0, 66%, 25%); */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    opacity: .9;
+    
+     /* background-image: linear-gradient(135deg,#222649 20%, #09268b 80%);  */
+     /* background-image: url('london3.jpg'); */
     padding: 1rem;
-    border-bottom: 2px solid#021b79;
+    border-bottom: 2px solid hsl(0, 49%, 10%);
     height: 15vh;
 }
 .logo,
 .add{
-  color: white;
+  color:   #e7eef1ce;
   font-size: 2rem;
   padding: 16px;
   text-decoration: none;
@@ -42,7 +50,7 @@ nav {
 
 .logo:hover,
 .add:hover {
-  color:  #0575e6;
+  color:   #e7eef1f1;
 }
 
 h1 {
@@ -71,8 +79,9 @@ h1 {
                     0 20px 20px rgba(0,0,0,.3);
    
 }
-p {
+.register-instruction {
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 p.error {
   color: red;
@@ -82,8 +91,10 @@ p.error {
 /* REGISTER FORM */
 .register-block {
   position: relative;
-  /* background: #e7eef1; */
-  background:  #5770c8;
+  background: #e7eef1;
+   /* background-image: url('london.jpg'); */
+  /* background:  #5770c8; */
+  opacity: .8;
   /* background:  #021b79; */
   width: 60%;
   max-width: 960px;
@@ -92,7 +103,7 @@ p.error {
  
   box-shadow: 0 0 50px rgba(0, 0,0,.2);
   border-radius: 2px;
-  color: white;
+  color: #021b79;
 }
 
 .register-block form input {
@@ -160,7 +171,8 @@ p.error {
 }
 /* INSTRUCTION */
 
-.instruction {
+.instruction,
+.details {
   /* display: block;
   margin: 0 5rem;
   
@@ -173,10 +185,11 @@ p.error {
   flex-direction: column;
   /* max-height: 60vh; */
   /* padding: 15px;  */
+  opacity: .9;
 
 
   position: relative;
-  background:#5770c8;
+  /* background:#5770c8; */
   /* background:  #2d2e30; */
   /* background:  #021b79; */
   width: 60%;
@@ -186,7 +199,8 @@ p.error {
  
   box-shadow: 0 0 50px rgba(0, 0,0,.2);
   border-radius: 2px;
-  color: white;
+  color:#021b79;
+  background: #e7eef1;
 
 
 
@@ -219,7 +233,7 @@ footer {
   display: flex;
   justify-content: center;
   font-family: serif;
-  color: #5770c8;
+  color: #232342;
   font-size: 1rem;
 }
 
@@ -230,6 +244,7 @@ footer {
   display: block;
   width: 6rem;
   background:  #5770c8;
+  text-decoration: 
   border: none;
   color: white;
   padding: 15px 24px;
@@ -322,20 +337,24 @@ footer {
     }
 
     .card {
-      background-color:   #5770c8;
+      /* background-color:   #5770c8; */
+      color:#021b79;
+  background: #e7eef1;
+  opacity: .75;
       padding: 2rem;
       display: grid;
       justify-content: center;
       box-shadow: 0 0 50px rgba(0, 0,0,.3);
     }
     .card-content {
+      font-size: 1.2rem;
       width: 300px;
-      padding: 1.2rem;
+      padding: 1.4rem;
       text-align: left;
       border-bottom: 2px dashed #021b79;
     }
     .card-content h5 {
-      font-size:1.3rem;
+      font-size:1.6rem;
       text-transform: uppercase;
       margin-bottom: 1rem;
       text-align: center;
