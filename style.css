@@ -71,7 +71,7 @@ h1 {
                     0 7px 0 hsl(52,7%,8%),
                     0 8px 0 hsl(52,7%,6%),
   
-                    0 0 5px rgba(0,0,0,.05),
+                    0 0 5px rgba(0,0,0,.05),l,
                     0 1px 3px rgba(0,0,0,.2),
                     0 3px 5px rgba(0,0,0,.2),
                     0 5px 10px rgba(0,0,0,.2),
@@ -82,7 +82,7 @@ h1 {
 .register-instruction {
   margin-bottom: 20px;
   font-size: 1.5rem;
-}
+}8
 p.error {
   color: red;
 }
@@ -166,8 +166,6 @@ p.error {
   margin: 20px auto;
   border-bottom: dashed 2px #021b79;
   justify-content: center;
-
-
 }
 /* INSTRUCTION */
 
@@ -178,7 +176,6 @@ p.error {
   
   line-height: 1.5rem;
   */ 
-
 
   display: flex;
   justify-content: center;
@@ -202,8 +199,6 @@ p.error {
   color:#021b79;
   background: #e7eef1;
 
-
-
  /* margin: 60px auto; */
 
 }
@@ -225,8 +220,6 @@ p.error {
   border-bottom: dashed 2px #021b79;
 }
 
-
-
 /* FOOTER */
 
 footer {
@@ -243,80 +236,28 @@ footer {
   /* position: relative; */
   display: block;
   width: 6rem;
-  background:  #5770c8;
-  text-decoration: 
-  border: none;
+  background:  hsl(227, 51%, 50%);
+  text-decoration: none;
   color: white;
   padding: 15px 24px;
   font-size: 1.4rem;
-  box-shadow: -6px 6px 0 hsl(221, 51%, 30%);
+  box-shadow: -6px 6px 0 hsl(221, 40%, 30%);
   outline: none;
   margin-top: 3rem;
+
   /* margin: 3rem 8rem; */
 }
 
   .btn-3d:hover {
-    background: hsl(227, 51%, 45%);
+    background: hsl(227, 50%, 40%);
   }
 
   .btn-3d:active {
-    background: hsl(227, 51%, 40%);
+    background: hsl(227, 51%, 20%);
     top: 3px;
     left: -3px;
-    box-shadow: -3px 3px 0 hsl(227, 51%, 30%);
+    box-shadow: -3px 3px 0 hsl(227, 51%, 20%);
   }
-
-  /* .btn-3d::before {
-    position: absolute;
-    display: block;
-    content: "";
-    height: 0;
-    width: 0;
-    /* border width needs to be size of the element's box shadow */
-    /* border: solid 6px transparent; */
-
-    /* border width needs to be size of the element's box shadow */
-    /* border-right: solid 6px hsl(227, 51%, 30%); */
-
-    /* no width for left, makes measurements easier */
-    /* border-left-width: 0px; */
-/* 
-    background: none;
-    top: 0px; */
-
-    /* needs to be the same size as border width */
-    /* left: -6px; */
-  /* } */
-   
-
-  /* .btn-3d::after {
-    position: absolute;
-    display: block;
-    content: "";
-    height: 0;
-    width: 0;
-    border: solid 6px transparent;
-    border-top: solid 6px hsl(227, 51%, 30%);
-    border-bottom-width: 0px;
-    background: none;
-    right: 0;
-    bottom: -6px;
-  } */
-
-    /* .btn-3d:active::before {
-      border: solid 3px transparent;
-      border-right: solid 3px hsl(227, 51%, 30%);
-      border-left-width: 0px;
-      left: -3px;
-    }
-
-    .btn-3d:active::after {
-      border: solid 3px transparent;
-      border-top: solid 3px hsl(227, 51%, 30%);
-      border-bottom-width: 0px;
-      bottom: -3px;
-    } */
-
 
     /* FORM */
 
@@ -372,3 +313,30 @@ footer {
   margin: 0 auto;
 
 }
+
+/* DETAILS */
+
+.flag {
+  width: 100px;
+  margin: 10px auto -30px;
+  display: block;
+  position: relative;
+  top: -30px;
+  
+}
+
+input[type="submit"].btn-3d {
+  border: none;
+  font-family: inherit;
+}
+.details {
+ width: 40%;
+  font-size: 1.5rem;
+  padding: 1rem;
+
+}
+.details>* {
+  margin: 10px 40px;
+
+}
+ 

@@ -33,6 +33,7 @@ mysqli_close($conn);
     <?php foreach($words as $word): ?>
 
     <div class="card">
+        <img src="uk_flag.png" alt="uk_flag" class="flag">
         <div class="card-content">
             <h5> <?php  echo htmlspecialchars($word['definition']); ?></h5>
             <ul>
