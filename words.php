@@ -46,6 +46,8 @@ mysqli_close($conn);
     
         <div class="card-action">
             <a href="details.php?id=<?php echo $word['id']?>" class="diki-info">more info</a>
+         
+            <a href="https://www.diki.pl/slownik-angielskiego?q=<?php echo $word['definition']?>" class="diki-info">diki</a>
         </div>
     </div>
 

@@ -297,9 +297,11 @@ footer {
       text-align: center;
     }
     .card-action {
+      display: flex;
+  justify-content: space-around;
       padding-top: 1rem;
      
-      justify-self: right;
+      /* justify-self: right; */
       font-size: 1.3rem;
 
     }
