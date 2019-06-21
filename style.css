@@ -15,11 +15,14 @@ body {
     /* background: #2c47a8; */
     /* background: #5770c8; */
     background-image: url('london.jpg');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: left;
     
     color: white;
+    
+
+  
 }
 
 
@@ -39,8 +42,8 @@ nav {
     border-bottom: 2px solid hsl(0, 49%, 10%);
     height: 15vh;
 }
-.logo,
-.add{
+.logo
+{
   color:   #e7eef1ce;
   font-size: 2rem;
   padding: 16px;
@@ -48,8 +51,8 @@ nav {
   transition: color .2s ease-in-out;
 }
 
-.logo:hover,
-.add:hover {
+.logo:hover
+ {
   color:   #e7eef1f1;
 }
 
@@ -92,10 +95,7 @@ p.error {
 .register-block {
   position: relative;
   background: #e7eef1;
-   /* background-image: url('london.jpg'); */
-  /* background:  #5770c8; */
   opacity: .8;
-  /* background:  #021b79; */
   width: 60%;
   max-width: 960px;
   margin: 60px auto;
@@ -154,9 +154,6 @@ p.error {
 .register-block form input[type="submit"]:hover {
   background-size: 140% 140%;
 }
-/* .register-block form>p.error {
-  color: red;
-} */
 
 .register-title {
   display: flex;
@@ -171,12 +168,6 @@ p.error {
 
 .instruction,
 .details {
-  /* display: block;
-  margin: 0 5rem;
-  
-  line-height: 1.5rem;
-  */ 
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -186,9 +177,6 @@ p.error {
 
 
   position: relative;
-  /* background:#5770c8; */
-  /* background:  #2d2e30; */
-  /* background:  #021b79; */
   width: 60%;
   /* max-width: 960px; */
   margin: 60px auto;
@@ -199,11 +187,8 @@ p.error {
   color:#021b79;
   background: #e7eef1;
 
- /* margin: 60px auto; */
-
 }
 
-/* .instruction h2, */
 .instruction ol,
 .btn-3d {
   /* margin: 3rem 0; */
@@ -220,22 +205,32 @@ p.error {
   border-bottom: dashed 2px #021b79;
 }
 
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* FOOTER */
 
 footer {
-  display: flex;
+  /* display: flex; */
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
   justify-content: center;
   font-family: serif;
-  color: #232342;
+  color: #e7eef1;
+  /* color: black; */
   font-size: 1rem;
+  
 }
 
 /* BUTTON 3D */
 
 .btn-3d {
-  /* position: relative; */
   display: block;
-  width: 6rem;
   background:  hsl(227, 51%, 50%);
   text-decoration: none;
   color: white;
@@ -245,7 +240,6 @@ footer {
   outline: none;
   margin-top: 3rem;
 
-  /* margin: 3rem 8rem; */
 }
 
   .btn-3d:hover {
@@ -269,12 +263,14 @@ footer {
     /* WORDS */
 
   .container{
+    position: relative;
       display: grid;
      justify-content: center;
-      padding: 2rem;
+      padding: 4rem;
       grid-gap: 2rem;
       grid-template-rows: 1fr,repeat(auto-fit, minmax(400px, 1fr));
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
     }
 
     .card {
@@ -313,6 +309,9 @@ footer {
   margin: 0 auto;
 
 }
+.container {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
 
 /* DETAILS */
 
@@ -340,3 +339,4 @@ input[type="submit"].btn-3d {
 
 }
  
+

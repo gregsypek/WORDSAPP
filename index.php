@@ -5,18 +5,19 @@
 
 <?php include('templates/header.php');?>
 <header  class="instruction">
-        <h2>Krótka instrukcja obsługi mojej aplikacji</h2>
+        <h2>Short instruction for my app</h2>
             
                 <ol>
-                        
-                                <li>Wybieramy przycisk GO aby przejść do formularza</li>
-                                <li>Podajemy nowe nieznane słowo i jego definicje przedzieloną przecinkiem</li>
-                                <li>Klikamy na DODAJ</li>
-                                <li>Aby podejrzec nowo dodane słowo przechodzimy do biblioteki</li>
+                                <li>Chosoe button list for words database or "Add a word" for new word.</li>
+                                <li>Type a definition and explanation. Each explanation  must by separated by a comma.</li>
+                                <li>Click on "add to the database".</li>
+                                <li>In addition could delete this word ar show more details about it. </li>
                 </ol>
-                <a href="words.php" class="btn-3d">GO!</a>
-               
-            
+                <div class="btns">
+                <a href="words.php" class="btn-3d">List</a>
+                <a href="add.php" class="btn-3d">Add a word!</a>
+
+                </div>
         </header>
 <?php include('templates/footer.php');?>
 

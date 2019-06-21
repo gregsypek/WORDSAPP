@@ -30,6 +30,7 @@ mysqli_close($conn);
 
 <div class="container">
 <h3 class="words">Words!</h3>
+
     <?php foreach($words as $word): ?>
 
     <div class="card">
@@ -49,8 +50,6 @@ mysqli_close($conn);
     </div>
 
                 <?php endforeach; ?>
-
-</div>
 
 <?php include('templates/footer.php');?>
 
