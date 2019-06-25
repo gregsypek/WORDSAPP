@@ -8,9 +8,13 @@
     box-sizing: border-box;
 
 }
+html, body {
+  height: 100%;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  
     font-family: 'Bubblegum Sans', cursive;
     /* background: #2c47a8; */
     background: #2c4bbb;
@@ -22,9 +26,17 @@ body {
     background-position: left;
     
     color: white;
-    
-
-  
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.wrapper::after {
+  content: "";
+  display: block;
+}
+footer, .wrapper::after {
+  height: 50px;
 }
 
 
@@ -325,19 +337,23 @@ transform: translate(-50%, -50%);
 /* FOOTER */
 
 footer {
-  /* display: flex; */
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 2rem;
+  display: flex;
+  /* position: absolute; */
+  /* bottom: 2%; */
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
+  /* margin-top: 2rem; */
   
   justify-content: center;
+  
   font-family: inherit;
-  color: #e7eef1;
+  color: #e7eef1d0;
   /* color: black; */
   font-size: 1rem;
   
+}
+.copyright {
+  align-self: center;
 }
 @media only screen and (max-width: 600px) {
   footer
@@ -584,10 +600,10 @@ h1 {
 body::before {
   position: fixed;
   content: "";
-  height: 400px;
-  width:400px;
-  top: 347px;
-  right: 22px;
+  height: 30vw;
+  width:30vw;
+  top: 20vh;
+  right: 3vw;
   background: url('logo3.png') no-repeat;
   background-size: 100%;
   opacity: .2;

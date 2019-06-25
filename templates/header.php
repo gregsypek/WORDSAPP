@@ -10,10 +10,10 @@
 </head>
 <body>
 
-<div class="wrapper">
-        <nav>
-                <a href="index.php" class="logo">WordsApp</a>
-                <h1>Application for learning English words!</h1>
-                <!-- <a href="add.php" class="add">Add a word</a> -->
-        </nav>
+        <div class="wrapper">
+                <nav>
+                        <a href="index.php" class="logo">WordsApp</a>
+                        <h1>Application for learning English words!</h1>
+                        <!-- <a href="add.php" class="add">Add a word</a> -->
+                </nav>
        
