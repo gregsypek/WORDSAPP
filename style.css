@@ -13,6 +13,7 @@ body {
   height: 100vh;
     font-family: 'Bubblegum Sans', cursive;
     /* background: #2c47a8; */
+    background: #2c4bbb;
     /* background: #5770c8; */
     /* background-image: url('london.jpg'); */
     /* background-repeat: no-repeat; */
@@ -119,6 +120,12 @@ h1 {
   h1 {
     font-size: 1.8rem;
     line-height: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 .register-instruction {
@@ -252,7 +259,7 @@ transform: translate(-50%, -50%);
   flex-direction: column;
   /* max-height: 60vh; */
   /* padding: 15px;  */
-  opacity: .9;
+  opacity: .8;
 
 
   position: relative;
@@ -405,11 +412,12 @@ footer {
       /* background-color:   #5770c8; */
       color:#021b79;
   background: #e7eef1;
-  opacity: .75;
+  opacity: .7;
       padding: 2rem;
       display: grid;
       justify-content: center;
       box-shadow: 0 0 50px rgba(0, 0,0,.3);
+      z-index:3;
     }
 
     @media only screen and (max-width: 800px) {
@@ -426,8 +434,8 @@ footer {
     }
     .card-content {
       font-size: 1.2rem;
-      width: 300px;
-      padding: 1.4rem;
+      width: 250px;
+      padding: 1.4rem .5rem;
       text-align: left;
       border-bottom: 2px dashed #021b79;
     }
@@ -470,6 +478,12 @@ footer {
   .flag
     {
       width: 80px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .flag
+    {
+      margin: 20px auto -30px;
   }
 }
 
@@ -565,5 +579,21 @@ h1 {
   transform: rotate(0);
 }
 }
+
+
+body::before {
+  position: fixed;
+  content: "";
+  height: 400px;
+  width:400px;
+  top: 347px;
+  right: 22px;
+  background: url('logo3.png') no-repeat;
+  background-size: 100%;
+  opacity: .2;
+  z-index: 2;
+}
+
+
  
 
